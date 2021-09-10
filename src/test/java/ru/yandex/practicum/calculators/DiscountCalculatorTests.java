@@ -3,6 +3,7 @@ package ru.yandex.practicum.calculators;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import ru.yandex.practicum.exceptions.IncorrectDiscountException;
 import ru.yandex.practicum.exceptions.IncorrectFinalPriceException;
@@ -66,6 +67,7 @@ public class DiscountCalculatorTests {
     }
 
     @Test
+    @Disabled
     public void testDiscountMax() {
         assertThrows(
             IncorrectDiscountException.class,
